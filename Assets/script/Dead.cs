@@ -4,12 +4,12 @@ public class Dead : MonoBehaviour
 {
 
     private GameObject personaje;
-    private MovPersonaje movPersonaje;
+    private movPersonaje _movPersonaje;
 
     void Start()
     {
         personaje = GameObject.Find("Personaje");
-        movPersonaje = personaje.GetComponent<MovPersonaje>();
+        _movPersonaje = personaje.GetComponent<movPersonaje>();
       
     }
     
@@ -26,7 +26,7 @@ public class Dead : MonoBehaviour
 
         if(col.name == "Personaje")
         {
-            movPersonaje.Respawnear();
+            _movPersonaje.Respawnear();
         }
 
     }

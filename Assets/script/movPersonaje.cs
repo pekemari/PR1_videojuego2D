@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class movPersonajes : MonoBehaviour
+public class movPersonaje : MonoBehaviour
 {
 
     public float velocidad = 0.03f;
@@ -96,11 +96,11 @@ public class movPersonajes : MonoBehaviour
         if(transform.position.y <= -7)
         {
             Respawnear();
-        }
+        }   
 
     }
 
-    void Respawnear()
+     public void Respawnear()
     {
         transform.position = Respawn.transform.position;
 
