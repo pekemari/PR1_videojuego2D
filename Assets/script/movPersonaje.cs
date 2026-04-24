@@ -103,10 +103,13 @@ public class movPersonaje : MonoBehaviour
      public void Respawnear()
     {
         transform.position = Respawn.transform.position;
+        Debug.Log ("vidas" +GameManager.vidas);
+        GameManager.vidas = GameManager.vidas -1;
+        Debug.Log ("vidas" +GameManager.vidas);
 
     }
 
-
-
+    //0 vidas
+   
 }
 
